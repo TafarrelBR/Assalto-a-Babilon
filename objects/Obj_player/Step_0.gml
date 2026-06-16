@@ -1,5 +1,8 @@
 /// @description Inserir descrição aqui
 // Você pode escrever seu código neste editor
+
+depth = -bbox_bottom;
+
 var up, down, left, right;
 
 up = keyboard_check(ord("W"));
@@ -9,8 +12,6 @@ right = keyboard_check(ord("D"));
 
 // direita e baixo, estão na frente para que estando apertado o resultado de 1 (1 - 0), caso contrario de -1 (0 - 1)
 //velh = (right - left) * max_vel;
-
-show_debug_message(arma);
 
 //velv = (down - up) * max_vel;
 
