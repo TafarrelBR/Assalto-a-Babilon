@@ -37,6 +37,7 @@
     {"id":{"name":"obj_cajado_axe","path":"objects/obj_cajado_axe/obj_cajado_axe.yy",},},
     {"id":{"name":"obj_cajado_verde","path":"objects/obj_cajado_verde/obj_cajado_verde.yy",},},
     {"id":{"name":"obj_cajado_vermelho","path":"objects/obj_cajado_vermelho/obj_cajado_vermelho.yy",},},
+    {"id":{"name":"obj_inimigo_pai","path":"objects/obj_inimigo_pai/obj_inimigo_pai.yy",},},
     {"id":{"name":"obj_lizard","path":"objects/obj_lizard/obj_lizard.yy",},},
     {"id":{"name":"Obj_player","path":"objects/Obj_player/Obj_player.yy",},},
     {"id":{"name":"obj_tiro_axe","path":"objects/obj_tiro_axe/obj_tiro_axe.yy",},},

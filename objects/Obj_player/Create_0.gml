@@ -11,8 +11,66 @@ vel = 0;
 move_dir = 0;
 
 arma = noone;
-//Criando metode de usar a arma
 
+dano = false;
+vida_max = 3
+vida = vida_max;
+
+tempo_invenc = room_speed * 2;
+
+xscale = 1;
+
+//metodo de olhando onde o jogador esta olhando
+olha_mouse = function()
+{
+	//checar se o x do mouse do jogador é maior ou igual que o meu x
+	if(mouse_x >= x)
+	{
+		//eu olho para a direita
+		xscale = 1;
+	}
+	else //o valor do x do mouse e menor que o meu
+	{
+		//eu olho para a esquerda
+		xscale = -1;
+	}
+}
+
+efeito_dano = function()
+{
+	static _valor = -.01
+	//se eu tomei dano eu mudo minha transparencia
+	
+	//checando se eu tomei dano
+	//se eu n tomei dano, n executo nada
+	if(!dano) return;
+	
+	//se eu sumir o valor fica positivo
+	//se eu apareci o valor fica negativo
+	if(image_alpha <= 0) _valor *= -1;
+	if(image_alpha > 1) _valor *= -1;
+	
+	//codigo com o efeito
+	image_alpha += _valor;
+}
+
+toma_dano = function()
+{
+	//quando eu tomar dano, eu perco 1 de vida se eu ainda n tomei dano
+	//se a variavel dano for false, então eu tomo dano
+	//se eu estou tyomando dano eu n executo o resto do codigo
+	if(dano) return;
+
+	//perdendo vida
+	vida--;	
+	
+	//avisando que eu tomei dano!
+	dano = true;
+	
+	//garantir que eu posso tomar dano tempos de um tempo
+	alarm[0] = tempo_invenc;
+}
+//Criando metode de usar a arma
 usar_arma = function()
 {
 	if(arma)

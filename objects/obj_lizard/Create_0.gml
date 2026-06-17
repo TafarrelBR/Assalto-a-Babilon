@@ -12,6 +12,9 @@ velv = 0;
 vel = 1;
 
 alvo = noone;
+alvo_dir = 0;
+duracao_atq = 0.5;
+tempo_atq = duracao_atq;
 
 sprite = sprite_index;
 xscale = 1;
@@ -137,6 +140,7 @@ estado_persegue = function()
 	//checar se meu alvo existe
 	if(instance_exists(alvo))
 	{
+		show_debug_message("achei voce");
 		//saber a direção do alvo
 		var _dir = point_direction(x, y, alvo.x, alvo.y);
 		
@@ -150,12 +154,16 @@ estado_persegue = function()
 		//se o alvo estiver muito proximo eu ataco
 		if(_dist < larg_visao / 2)
 		{
+			
+		show_debug_message("grawwwnn");
 			estado = estado_prepara_ataque; 
 		}
 		
 		//se o alvo esta muito longe eu desisto
 		if(_dist > larg_visao * 2)
 		{
+			
+		show_debug_message("kd vc");
 			alvo = noone; 
 		}
 	}
@@ -170,8 +178,9 @@ estado_prepara_ataque = function()
 {
 	
 	//_sat nunca passar de 1
-	if(sat < 1)
+	if(sat <= 1)
 	{
+		show_debug_message(sat);
 		sat += (delta_time / 2000000)
 	}
 	
@@ -187,7 +196,10 @@ estado_prepara_ataque = function()
 	//se eu esperei 2 segundo eu ataco
 	if(sat > 1) 
 	{
+		
+		show_debug_message("atacar");
 		estado = estado_ataque;
+		alvo_dir = point_direction(x, y, alvo.x, alvo.y);
 		sat = 0;
 		image_speed = 1;
 	}
@@ -196,7 +208,22 @@ estado_prepara_ataque = function()
 //estado de ataque
 estado_ataque = function()
 {
-	image_blend = c_aqua;
+	//diminuindo o tempo de ataque
+	tempo_atq -= delta_time / 1000000
+	image_blend = c_white;
+	//avança na posição do jogador 
+	velh = lengthdir_x(vel * 4, alvo_dir);
+	velv = lengthdir_y(vel * 4, alvo_dir);
+	
+	//fazendo ele sair do modo de ataque
+	if(tempo_atq <= 0)
+	{
+		//mudando de estado
+		estado = estado_parado;
+		
+		//resetar o tempo de ataque
+		tempo_atq = duracao_atq;
+	}
 }
 //definindo o estado unicial dele
 estado = estado_parado;
