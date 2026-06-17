@@ -14,6 +14,7 @@ if(place_meeting(x + velh, y, obj_block))
 	//eu ja movi tudo que eu tinha pra mover, agora estou colidindo
 	//acabo com minha velocidade
 	velh = 0;
+	
 }
 
 //me movo
