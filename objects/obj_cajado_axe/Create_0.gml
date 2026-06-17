@@ -11,7 +11,7 @@ atirando = function()
 		if(delay_tiro <= 0)
 		{
 			//resetando o delay do tiro
-			delay_tiro = espera_tiro * game_get_speed(gamespeed_fps);
+			delay_tiro = espera_tiro * room_speed;
 						
 			for(var i = 0; i < qtd_tiro; i++)
 			{

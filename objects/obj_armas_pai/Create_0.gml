@@ -27,7 +27,7 @@ atirando = function()
 		if(delay_tiro <= 0)
 		{
 			//resetando o delay do tiro
-			delay_tiro = espera_tiro * game_get_speed(gamespeed_fps);
+			delay_tiro = espera_tiro * room_speed;
 						
 			//achando a posição para criar o meu tiro
 			var _x = lengthdir_x(sprite_width, image_angle);

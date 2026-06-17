@@ -63,7 +63,7 @@ joga_arma = function()
 			arma.pai = noone;
 			
 			//dando delay para a arma
-			arma.delay_pega = game_get_speed(gamespeed_fps) * 2;
+			arma.delay_pega = room_speed * 2;
 			
 			arma = noone;
 		}

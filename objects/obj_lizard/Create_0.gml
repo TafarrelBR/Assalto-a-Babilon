@@ -1,5 +1,5 @@
 estado = noone;
-tempo_estado = game_get_speed(gamespeed_fps) * 10;
+tempo_estado = room_speed * 10;
 timer_estado = 0;
 
 destino_x = x;
@@ -27,8 +27,8 @@ muda_estado = function(_estado)
 	if(timer_estado == tempo_estado or tempo_estado <= 0)
 	{
 		//vou checar qual estado devo ir
-		estado = _estado[irandom(array_last(_estado)-1)];
-		tempo_estado = game_get_speed(gamespeed_fps) * 10;
+		estado = _estado[irandom(array_length(_estado)-1)];
+		tempo_estado = room_speed * 10;
 	}
 }
 
@@ -52,7 +52,7 @@ estado_parado = function()
 	velh = 0;
 	velv = 0;
 	
-	muda_estado([estado_passeando,estado_parado]);
+	muda_estado([estado_passeando, estado_parado]);
 }
 
 estado_passeando = function()
@@ -78,7 +78,7 @@ estado_passeando = function()
 	
 	//olhando para o lado que vou
 	//evitando o xscale bug com valor 0
-	if (ve != 0)
+	if (velh != 0)
 	{
 		xscale = sign(velh);	
 	}
@@ -92,4 +92,4 @@ estado_passeando = function()
 }
 
 //definindo o estado unicial dele
-estado = estado_parado();
+estado = estado_parado;
