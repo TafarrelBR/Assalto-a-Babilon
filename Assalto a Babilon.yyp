@@ -42,6 +42,7 @@
     {"id":{"name":"obj_cajado_verde","path":"objects/obj_cajado_verde/obj_cajado_verde.yy",},},
     {"id":{"name":"obj_cajado_vermelho","path":"objects/obj_cajado_vermelho/obj_cajado_vermelho.yy",},},
     {"id":{"name":"obj_inimigo_pai","path":"objects/obj_inimigo_pai/obj_inimigo_pai.yy",},},
+    {"id":{"name":"Obj_Inimigos_pai_novo","path":"objects/Obj_Inimigos_pai_novo/Obj_Inimigos_pai_novo.yy",},},
     {"id":{"name":"Obj_Largato_Azul","path":"objects/Obj_Largato_Azul/Obj_Largato_Azul.yy",},},
     {"id":{"name":"Obj_Largato_Verde","path":"objects/Obj_Largato_Verde/Obj_Largato_Verde.yy",},},
     {"id":{"name":"obj_loot","path":"objects/obj_loot/obj_loot.yy",},},

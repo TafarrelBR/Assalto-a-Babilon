@@ -2,22 +2,13 @@
 function novo_estado() constructor
 {
 	//inicia estado
-	static inicia = function()
-	{
-		
-	}
+	static inicia = function(){}
 	
 	//roda estado
-	static roda = function()
-	{
-		
-	}
+	static roda = function(){}
 	
 	//finaliza o estado
-	static finaliza = function()
-	{
-		
-	}
+	static finaliza = function(){}
 }
 
 //Funções para gerencias a maquina de estados
