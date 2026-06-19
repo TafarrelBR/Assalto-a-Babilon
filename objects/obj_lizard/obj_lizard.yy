@@ -11,8 +11,8 @@
   "name":"obj_lizard",
   "overriddenProperties":[],
   "parent":{
-    "name":"Tilesets",
-    "path":"folders/Tilesets.yy",
+    "name":"Lizard",
+    "path":"folders/Objects/Inimigos/Lizard.yy",
   },
   "parentObjectId":{
     "name":"obj_inimigo_pai",

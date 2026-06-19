@@ -1,3 +1,10 @@
+//herdando as informações do meu pai
+event_inherited();
+
+//ajustando a minha vida
+vida_max = 3;
+vida_atual = vida_max;
+
 estado = noone;
 tempo_estado = room_speed * 10;
 timer_estado = 0;
@@ -11,10 +18,17 @@ velh = 0;
 velv = 0;
 vel = 1;
 
+tempo_morte = room_speed;
+
 alvo = noone;
 alvo_dir = 0;
 duracao_atq = 0.5;
 tempo_atq = duracao_atq;
+
+//timer do dano
+dano_timer = 0;
+tempo_dano = room_speed / 4;
+timer_de_dano = tempo_dano;
 
 sprite = sprite_index;
 xscale = 1;
@@ -41,7 +55,16 @@ muda_estado = function(_estado)
 
 desenhar_sprite = function()
 {
-	draw_sprite_ext(sprite, image_index, x, y, xscale, yscale, image_angle, image_blend, image_alpha);
+	if(dano)
+	{
+		shader_set(sh_branco);
+		draw_sprite_ext(sprite, image_index, x, y, xscale, yscale, image_angle, image_blend, image_alpha);
+		shader_reset();
+	}
+	else//se não eu me desenhor normal
+	{
+		draw_sprite_ext(sprite, image_index, x, y, xscale, yscale, image_angle, image_blend, image_alpha);
+	}
 }
 
 desenha_sombra = function()
@@ -71,6 +94,7 @@ estado_parado = function()
 {
 	
 	sprite = spr_lizard_idle;
+	image_blend = c_white;
 	
 	//zerando a velocidade quando eu estiver parado
 	velh = 0;
@@ -223,6 +247,69 @@ estado_ataque = function()
 		
 		//resetar o tempo de ataque
 		tempo_atq = duracao_atq;
+	}
+}
+
+estado_dano = function()
+{
+	timer_de_dano --;
+	
+	//sendo empurrado para tras
+	velh = lengthdir_x(1, p_dir);
+	velv = lengthdir_y(1, p_dir);
+	
+	if(timer_de_dano <= 0)
+	{
+		//checando se devo morrer
+		if(vida_atual <= 0)
+		{
+			estado = estado_morto;
+		}
+		else
+		{
+			// se n morreu vem para ca
+			estado = estado_parado;
+		
+			//resetando o timer_dano
+			timer_de_dano = tempo_dano;
+		}
+	
+	}	
+}
+
+estado_morto = function()
+{	
+	image_alpha -= .01;
+	
+	image_speed = 0;
+	velh = 0;
+	velv = 0;
+	
+	if(image_alpha <= 0 )
+	{
+		instance_destroy();
+	}
+}
+
+leva_dano = function(_dano)
+{
+	if(estado != estado_morto)
+	{
+		estado = estado_dano;
+	
+		//perdendo vida
+		//se levou dano, mas o dano n esta definido, estão tomo1 de dano
+		if(_dano == undefined)
+		{
+			vida_atual -= 1;
+		}
+		else // caso contrario eu perco vida igual ao dano
+		{
+			vida_atual -= _dano;
+		}
+	
+		//vou avisar que ele tomou dano
+		dano = true;
 	}
 }
 //definindo o estado unicial dele
