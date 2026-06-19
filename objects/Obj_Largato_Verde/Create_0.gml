@@ -55,16 +55,7 @@ muda_estado = function(_estado)
 
 desenhar_sprite = function()
 {
-	if(dano)
-	{
-		shader_set(sh_branco);
-		draw_sprite_ext(sprite, image_index, x, y, xscale, yscale, image_angle, image_blend, image_alpha);
-		shader_reset();
-	}
-	else//se não eu me desenhor normal
-	{
-		draw_sprite_ext(sprite, image_index, x, y, xscale, yscale, image_angle, image_blend, image_alpha);
-	}
+	draw_sprite_ext(sprite, image_index, x, y, xscale, yscale, image_angle, image_blend, image_alpha);
 }
 
 desenha_sombra = function()
@@ -93,7 +84,7 @@ campo_visao = function(_largura, _altura, _xscale)
 estado_parado = function()
 {
 	
-	sprite = spr_lizard_idle;
+	sprite = Spr_lagarto_verde_parado;
 	image_blend = c_white;
 	
 	//zerando a velocidade quando eu estiver parado
@@ -114,7 +105,7 @@ estado_parado = function()
 estado_passeando = function()
 {
 	//definindo a sprite
-	sprite = spr_lizard_run;
+	sprite = Spr_lagarto_verde_correndo;
 	
 	//fazer ele passear
 	//ele vai escolher um ponto para ir
@@ -159,7 +150,7 @@ estado_passeando = function()
 estado_persegue = function()
 {
 	//usando a sprite certa
-	sprite = spr_lizard_run;
+	sprite = Spr_lagarto_verde_correndo;
 	
 	//checar se meu alvo existe
 	if(instance_exists(alvo))
@@ -211,7 +202,7 @@ estado_prepara_ataque = function()
 	//animação use a _sat
 	image_speed = sat;
 	
-	sprite = spr_lizard_idle;
+	sprite = Spr_lagarto_verde_parado;
 	velh = 0;
 	velv = 0;
 	
@@ -254,6 +245,8 @@ estado_dano = function()
 {
 	timer_de_dano --;
 	
+	sprite = Spr_lagarto_verde_apanhando;
+	
 	//sendo empurrado para tras
 	velh = lengthdir_x(1, p_dir);
 	velv = lengthdir_y(1, p_dir);
@@ -279,7 +272,7 @@ estado_dano = function()
 
 estado_morto = function()
 {	
-	image_alpha -= .01;
+	image_alpha -= .03;
 	
 	image_speed = 0;
 	velh = 0;
@@ -288,6 +281,8 @@ estado_morto = function()
 	if(image_alpha <= 0 )
 	{
 		instance_destroy();
+		//dropando meu loot
+		droppar_loot();
 	}
 }
 

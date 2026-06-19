@@ -1,6 +1,6 @@
 {
   "$GMSprite":"v2",
-  "%Name":"spr_lizard_idle",
+  "%Name":"Spr_lagarto_verde_parado",
   "bboxMode":0,
   "bbox_bottom":27,
   "bbox_left":0,
@@ -24,19 +24,19 @@
   "layers":[
     {"$GMImageLayer":"","%Name":"3b07a920-9e4c-42a6-9363-6abbf0fc979a","blendMode":0,"displayName":"default","isLocked":false,"name":"3b07a920-9e4c-42a6-9363-6abbf0fc979a","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"spr_lizard_idle",
+  "name":"Spr_lagarto_verde_parado",
   "nineSlice":null,
   "origin":7,
   "parent":{
-    "name":"Lizard",
-    "path":"folders/Sprites/Inimigos/Lizard.yy",
+    "name":"Verde",
+    "path":"folders/Sprites/Inimigos/Lagartos/Verde.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"v1",
-    "%Name":"spr_lizard_idle",
+    "%Name":"Spr_lagarto_verde_parado",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -60,7 +60,7 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"spr_lizard_idle",
+    "name":"Spr_lagarto_verde_parado",
     "playback":1,
     "playbackSpeed":6.0,
     "playbackSpeedType":0,
@@ -72,16 +72,16 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"fe1a720e-136b-46bd-9d2c-99256a68504e","path":"sprites/spr_lizard_idle/spr_lizard_idle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"fe1a720e-136b-46bd-9d2c-99256a68504e","path":"sprites/Spr_lagarto_verde_parado/Spr_lagarto_verde_parado.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"6c8c16ea-9998-474f-a17d-c5becac79859","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"591b1855-e138-4d9a-a2ab-5edd51197e9a","path":"sprites/spr_lizard_idle/spr_lizard_idle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"591b1855-e138-4d9a-a2ab-5edd51197e9a","path":"sprites/Spr_lagarto_verde_parado/Spr_lagarto_verde_parado.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"f2ae439e-b1ee-4802-90ba-e62a2ed09b58","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"58b34d0c-9437-4d4d-9d66-dee837b88823","path":"sprites/spr_lizard_idle/spr_lizard_idle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"58b34d0c-9437-4d4d-9d66-dee837b88823","path":"sprites/Spr_lagarto_verde_parado/Spr_lagarto_verde_parado.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"7d0bf4c1-aff1-48a1-b014-54b471d646fd","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"1f83b869-04ee-4b00-bc6d-6ab59bdbc7ef","path":"sprites/spr_lizard_idle/spr_lizard_idle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"1f83b869-04ee-4b00-bc6d-6ab59bdbc7ef","path":"sprites/Spr_lagarto_verde_parado/Spr_lagarto_verde_parado.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"54d9fdfd-6f1c-4ba3-bc37-e0e1d5e099b5","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],

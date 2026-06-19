@@ -1,6 +1,6 @@
 {
   "$GMObject":"",
-  "%Name":"obj_lizard",
+  "%Name":"Obj_Largato_Verde",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
@@ -8,7 +8,7 @@
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":2,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_lizard",
+  "name":"Obj_Largato_Verde",
   "overriddenProperties":[],
   "parent":{
     "name":"Lizard",
@@ -39,12 +39,12 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_lizard_idle",
-    "path":"sprites/spr_lizard_idle/spr_lizard_idle.yy",
+    "name":"Spr_lagarto_verde_parado",
+    "path":"sprites/Spr_lagarto_verde_parado/Spr_lagarto_verde_parado.yy",
   },
   "spriteMaskId":{
-    "name":"spr_lizard_idle",
-    "path":"sprites/spr_lizard_idle/spr_lizard_idle.yy",
+    "name":"Spr_lagarto_verde_parado",
+    "path":"sprites/Spr_lagarto_verde_parado/Spr_lagarto_verde_parado.yy",
   },
   "visible":true,
 }
