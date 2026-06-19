@@ -47,6 +47,7 @@
     {"id":{"name":"obj_loot","path":"objects/obj_loot/obj_loot.yy",},},
     {"id":{"name":"Obj_player","path":"objects/Obj_player/Obj_player.yy",},},
     {"id":{"name":"Obj_Quad","path":"objects/Obj_Quad/Obj_Quad.yy",},},
+    {"id":{"name":"Obj_quad2","path":"objects/Obj_quad2/Obj_quad2.yy",},},
     {"id":{"name":"obj_tiro_axe","path":"objects/obj_tiro_axe/obj_tiro_axe.yy",},},
     {"id":{"name":"obj_tiro","path":"objects/obj_tiro/obj_tiro.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},

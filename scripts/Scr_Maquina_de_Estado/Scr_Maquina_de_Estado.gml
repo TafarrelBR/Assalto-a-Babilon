@@ -38,4 +38,14 @@ function roda_estado()
 	//rodando meu estado atual
 	estado_atual.roda();
 }
+
 //Mudando de estado
+function muda_estado(_estado)
+{
+	//finalizar o estado atual
+	estado_atual.finaliza();//1 frame
+	//ir para o proximo estado
+	estado_atual = _estado;//mesmo frame
+	//inicializar o proximo estado
+	estado_atual.inicia();//ainda mesmo frame
+}
