@@ -40,3 +40,6 @@ function muda_estado(_estado)
 	//inicializar o proximo estado
 	estado_atual.inicia();//ainda mesmo frame
 }
+
+
+global.dinheiro = 0;

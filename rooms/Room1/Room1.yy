@@ -86,7 +86,6 @@
     {"name":"inst_55862367","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_48B67EC5","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_321EB7BE","path":"rooms/Room1/Room1.yy",},
-    {"name":"inst_29092122","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_47E2B176","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_658A812D","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_51040703","path":"rooms/Room1/Room1.yy",},
@@ -109,6 +108,7 @@
     {"name":"inst_351A9990","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_163B11D9","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_7AE5C623","path":"rooms/Room1/Room1.yy",},
+    {"name":"inst_56D9462D","path":"rooms/Room1/Room1.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -356,7 +356,6 @@
         {"$GMRInstance":"v4","%Name":"inst_3AF77DBD","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3AF77DBD","objectId":{"name":"obj_cajado_axe","path":"objects/obj_cajado_axe/obj_cajado_axe.yy",},"properties":[
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_armas_pai","path":"objects/obj_armas_pai/obj_armas_pai.yy",},"propertyId":{"name":"qtd_tiro","path":"objects/obj_armas_pai/obj_armas_pai.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"333",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":356.0,"y":168.0,},
-        {"$GMRInstance":"v4","%Name":"inst_29092122","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_29092122","objectId":{"name":"Obj_Largato_Azul","path":"objects/Obj_Largato_Azul/Obj_Largato_Azul.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":800.0,"y":416.0,},
         {"$GMRInstance":"v4","%Name":"inst_47E2B176","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_47E2B176","objectId":{"name":"Obj_Largato_Verde","path":"objects/Obj_Largato_Verde/Obj_Largato_Verde.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":640.0,"y":384.0,},
         {"$GMRInstance":"v4","%Name":"inst_658A812D","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_658A812D","objectId":{"name":"Obj_Largato_Verde","path":"objects/Obj_Largato_Verde/Obj_Largato_Verde.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":608.0,"y":512.0,},
         {"$GMRInstance":"v4","%Name":"inst_51040703","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_51040703","objectId":{"name":"Obj_Largato_Verde","path":"objects/Obj_Largato_Verde/Obj_Largato_Verde.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":320.0,"y":256.0,},
@@ -379,6 +378,7 @@
         {"$GMRInstance":"v4","%Name":"inst_351A9990","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_351A9990","objectId":{"name":"Obj_Largato_Azul","path":"objects/Obj_Largato_Azul/Obj_Largato_Azul.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":320.0,"y":544.0,},
         {"$GMRInstance":"v4","%Name":"inst_163B11D9","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_163B11D9","objectId":{"name":"Obj_Largato_Verde","path":"objects/Obj_Largato_Verde/Obj_Largato_Verde.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":160.0,"y":544.0,},
         {"$GMRInstance":"v4","%Name":"inst_7AE5C623","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7AE5C623","objectId":{"name":"Obj_Largato_Azul","path":"objects/Obj_Largato_Azul/Obj_Largato_Azul.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":128.0,"y":576.0,},
+        {"$GMRInstance":"v4","%Name":"inst_56D9462D","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_56D9462D","objectId":{"name":"Obj_Largato_Azul","path":"objects/Obj_Largato_Azul/Obj_Largato_Azul.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":832.0,"y":416.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"tl_chao","depth":600,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"tl_chao","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":48,"SerialiseWidth":86,"TileCompressedData":[
           -1581,38,5,49,38,38,56,57,-11,38,2,56,57,-88,38,1,49,-3,38,1,39,-68,38,1,39,-7,38,1,39,-94,38,1,39,-58,

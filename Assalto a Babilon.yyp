@@ -41,8 +41,7 @@
     {"id":{"name":"obj_cajado_axe","path":"objects/obj_cajado_axe/obj_cajado_axe.yy",},},
     {"id":{"name":"obj_cajado_verde","path":"objects/obj_cajado_verde/obj_cajado_verde.yy",},},
     {"id":{"name":"obj_cajado_vermelho","path":"objects/obj_cajado_vermelho/obj_cajado_vermelho.yy",},},
-    {"id":{"name":"obj_inimigo_pai","path":"objects/obj_inimigo_pai/obj_inimigo_pai.yy",},},
-    {"id":{"name":"Obj_Inimigos_pai_novo","path":"objects/Obj_Inimigos_pai_novo/Obj_Inimigos_pai_novo.yy",},},
+    {"id":{"name":"Obj_Inimigos_pai","path":"objects/Obj_Inimigos_pai/Obj_Inimigos_pai.yy",},},
     {"id":{"name":"Obj_Largato_Azul","path":"objects/Obj_Largato_Azul/Obj_Largato_Azul.yy",},},
     {"id":{"name":"Obj_Largato_Verde","path":"objects/Obj_Largato_Verde/Obj_Largato_Verde.yy",},},
     {"id":{"name":"obj_loot","path":"objects/obj_loot/obj_loot.yy",},},
@@ -54,7 +53,6 @@
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
     {"id":{"name":"Scr_Maquina_de_Estado","path":"scripts/Scr_Maquina_de_Estado/Scr_Maquina_de_Estado.yy",},},
-    {"id":{"name":"Script1","path":"scripts/Script1/Script1.yy",},},
     {"id":{"name":"sh_branco","path":"shaders/sh_branco/sh_branco.yy",},},
     {"id":{"name":"spr_block","path":"sprites/spr_block/spr_block.yy",},},
     {"id":{"name":"spr_cajado_axe","path":"sprites/spr_cajado_axe/spr_cajado_axe.yy",},},
@@ -79,8 +77,8 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

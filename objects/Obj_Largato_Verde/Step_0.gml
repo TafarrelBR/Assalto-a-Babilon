@@ -1,4 +1,4 @@
-estado();
+roda_estado();
 
 //arrumando minha profundidade	
 depth = -bbox_bottom;

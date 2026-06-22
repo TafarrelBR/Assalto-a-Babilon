@@ -15,8 +15,8 @@
     "path":"folders/Objects/Inimigos/Lizard.yy",
   },
   "parentObjectId":{
-    "name":"obj_inimigo_pai",
-    "path":"objects/obj_inimigo_pai/obj_inimigo_pai.yy",
+    "name":"Obj_Inimigos_pai",
+    "path":"objects/Obj_Inimigos_pai/Obj_Inimigos_pai.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
